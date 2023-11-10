@@ -1,3 +1,4 @@
+// ADDING THIS CRITICAL COMMENT
 console.log("script running")
 
 let myImages = ['jimage1.jpg', 'jimage2.jpg', 'jimage3.jpg', 'jimage4.jpg', 'jimage5.jpg'];
