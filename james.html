@@ -1,55 +1,63 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <link rel="stylesheet" href="james.css">
-    </head>
-    <body>
-        <div class="nav-container">
-            <div class="nav-buttons">
-                <div class="nav-button"><button class="nv-btn" onclick="location.href='index.html'" type="button">Home</button></div>
-                <div class="nav-button"><button class="nv-btn" onclick="location.href='adewumi.html'" type="button">Dogs</button></div>
-                <div class="nav-button"><button class="nv-btn" onclick="location.href='shivasree.html'" type="button">Lions</button></div>
-                <div class="nav-button"><button class="nv-btn" onclick="location.href='milan.html'" type="button">Tigers</button></div>
-                <div class="nav-button"><button class="nv-btn" onclick="location.href='james.html'" type="button">Guinea Pigs</button></div>
-            </div>
+
+<head>
+    <link rel="stylesheet" href="james.css">
+</head>
+
+<body>
+    <div class="nav-container">
+        <div class="nav-buttons">
+            <div class="nav-button"><button class="nv-btn" onclick="location.href='index.html'"
+                    type="button">Home</button></div>
+            <div class="nav-button"><button class="nv-btn" onclick="location.href='adewumi.html'"
+                    type="button">Dogs</button></div>
+            <div class="nav-button"><button class="nv-btn" onclick="location.href='shivasree.html'"
+                    type="button">Lions</button></div>
+            <div class="nav-button"><button class="nv-btn" onclick="location.href='milan.html'"
+                    type="button">Tigers</button></div>
+            <div class="nav-button"><button class="nv-btn" onclick="location.href='james.html'" type="button">Guinea
+                    Pigs</button></div>
         </div>
-        <div>
-            <h1 id="g-title">Guinea Pigs</h1>
-            <p id="facts">Click the slideshow links to see some Guinea Pig facts</p>
-            <img src="jimage1.jpg" id="myimage" width="600" height="400">
-            <p><a href="#" id="previous">previous</a> - <a href="#" id="next">next</a></p>
-        </div>
-        <script>
-            let myImages = ['jimage1.jpg', 'jimage2.jpg', 'jimage3.jpg', 'jimage4.jpg', 'jimage5.jpg'];
-            let currentImage = 0;
-            const facts = {
-                0: "guinea pigs are kind pets. Owners are fond of their 'squeaks' when excited.",
-                1: "Not from guinea, or true pigs, they are rodents from South America.",
-                2: "They are not natural. They were made through selective breeding as a livestock source of meat.",
-                3: "In the 16th century, they sold each for a guinea coin, and the name stuck."
-                };
+    </div>
+    <div id="mainContent">
+        <h1 id="g-title">Guinea Pigs</h1>
+        <p id="facts">Click the slideshow links to see some Guinea Pig facts</p>
+        <img src="jimage1.jpg" id="myimage" width="600" height="400">
+        <p><a href="#" id="previous">previous</a> - <a href="#" id="next">next</a></p>
+    </div>
+    <script>
+        let myImages = ['jimage1.jpg', 'jimage2.jpg', 'jimage3.jpg', 'jimage4.jpg', 'jimage5.jpg'];
+        let currentImage = 0;
+        const facts = {
+            0: "guinea pigs are kind pets. Owners are fond of their 'squeaks' when excited.",
+            1: "Not from guinea, or true pigs, they are rodents from South America.",
+            2: "They are not natural. They were made through selective breeding as a livestock source of meat.",
+            3: "In the 16th century, they sold each for a guinea coin, and the name stuck."
+        };
 
-            document.getElementById('next').onclick = nextPhoto;
+        document.getElementById('next').onclick = nextPhoto;
 
-            function nextPhoto(){
-                currentImage += 1;
+        function nextPhoto() {
+            currentImage += 1;
 
-                if (currentImage > 3) { currentImage = 0};
+            if (currentImage > 3) { currentImage = 0 };
 
-                document.getElementById('myimage').src = myImages[currentImage];
-                document.getElementById('facts').innerHTML = facts[currentImage];
-            }
+            document.getElementById('myimage').src = myImages[currentImage];
+            document.getElementById('facts').innerHTML = facts[currentImage];
+        }
 
-            document.getElementById('previous').onclick = prevPhoto;
+        document.getElementById('previous').onclick = prevPhoto;
 
-            function prevPhoto(){
-                currentImage -= 1;
+        function prevPhoto() {
+            currentImage -= 1;
 
-                if (currentImage < 0) {currentImage = 3};
+            if (currentImage < 0) { currentImage = 3 };
 
-                document.getElementById('facts').innerHTML = facts[currentImage];
-                document.getElementById('myimage').src = myImages[currentImage];
-            }
-        </script>
-    </body>
+            document.getElementById('facts').innerHTML = facts[currentImage];
+            document.getElementById('myimage').src = myImages[currentImage];
+        }
+    </script>
+</body>
+
 </html>
