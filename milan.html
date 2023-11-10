@@ -1,95 +1,81 @@
 <!DOCTYPE html>
 <html>
-    <head>
-       
-        <link rel="stylesheet" href="milan.css">
-        <script type="text/javascript" src="james.js"></script>
-    </head>
-    <body>
+
+<head>
+
+    <link rel="stylesheet" href="milan.css">
+    <script type="text/javascript" src="james.js"></script>
+</head>
+
+<body>
+    <div class="nav-container">
         <div class="nav-container">
-            <div class="nav-container">
-                <div class="nav-buttons">
-                    <div class="nav-button"><button class="nv-btn" onclick="location.href='index.html'" type="button">Home</button></div>
-                    <div class="nav-button"><button class="nv-btn" onclick="location.href='adewumi.html'" type="button">Dogs</button></div>
-                    <div class="nav-button"><button class="nv-btn" onclick="location.href='shivasree.html'" type="button">Lions</button></div>
-                    <div class="nav-button"><button class="nv-btn" onclick="location.href='milan.html'" type="button">Tigers</button></div>
-                    <div class="nav-button"><button class="nv-btn" onclick="location.href='james.html'" type="button">Guinea Pigs</button></div>
-                </div>
+            <div class="nav-buttons">
+                <div class="nav-button"><button class="nv-btn" onclick="location.href='index.html'"
+                        type="button">Home</button></div>
+                <div class="nav-button"><button class="nv-btn" onclick="location.href='adewumi.html'"
+                        type="button">Dogs</button></div>
+                <div class="nav-button"><button class="nv-btn" onclick="location.href='shivasree.html'"
+                        type="button">Lions</button></div>
+                <div class="nav-button"><button class="nv-btn" onclick="location.href='milan.html'"
+                        type="button">Tigers</button></div>
+                <div class="nav-button"><button class="nv-btn" onclick="location.href='james.html'" type="button">Guinea
+                        Pigs</button></div>
             </div>
         </div>
-        <header>
-            <h1>Welcome to the World of Tigers</h1>
-        </header>
-        <nav>
-            <ul>
-                
-            </ul>
-        </nav>
-        <section id="description">
-            <h2>About Tigers</h2>
-            <p>Tigers are the largest and most powerful cats in the world. They are known for their striking appearance and impressive characteristics.Among the largest species of cats in the world, tigers are powerful hunters with sharp teeth, strong jaws and agile bodies. They range across Asia from Russia all the way to Sumatra and mainland Southeast Asia. Researchers still have much to learn about these beautiful, endangered cats. </p>
-        </section>
-        <section id="characteristics">
-            <h2>Tiger Characteristics</h2>
-            
-            <p>Tigers are characterized by:</p>
-            
-                <p>Distinctive orange fur with black stripes</p>
-                <p>Sharp claws and powerful jaws</p>
-                <p>Excellent swimmers</p>
-                <p>Nocturnal and solitary behavior</p>
-         
-        </section>
-        <section id="photos">
-            <h2>Beautiful Tiger Photos & Click on the photo to see what it says</h2>
-            <div class="photo" onclick="showPhotoInfo(1)">
-                <img src="p4.jpg" alt="Tiger Photo 3" width="500" height="300">
-            </div>
-            <div class="photo" onclick="showPhotoInfo(2)">
-                <img src="p2.jpg" alt="Tiger Photo 2" width="500" height="300">
-            </div>
-            <div class="photo" onclick="showPhotoInfo(3)">
-                <img src="p3.jpg" alt="Tiger Photo 3" width="500" height="300">
-            </div>
-            <div class="photo" onclick="showPhotoInfo(4)">
-                <img src="p5.jpg" alt="Tiger Photo 3" width="500" height="300">
-            </div>
-            <div class="photo" onclick="showPhotoInfo(5)">
-                <img src="p6.jpg" alt="Tiger Photo 3" width="500" height="300">
-            </div>
-        </section>
-        <div id="photo-info" style="display: none;">
-            <h2>Photo Information</h2>
-            <h3 id="photo-description">Click on a photo to see its description.</h3>
+    </div>
+    <header>
+        <h1>Welcome to the World of Tigers</h1>
+    </header>
+    <nav>
+        <ul>
+
+        </ul>
+    </nav>
+    <section id="description">
+        <h2>About Tigers</h2>
+        <p>Tigers are the largest and most powerful cats in the world. They are known for their striking appearance and
+            impressive characteristics.Among the largest species of cats in the world, tigers are powerful hunters with
+            sharp teeth, strong jaws and agile bodies. They range across Asia from Russia all the way to Sumatra and
+            mainland Southeast Asia. Researchers still have much to learn about these beautiful, endangered cats. </p>
+    </section>
+    <section id="characteristics">
+        <h2>Tiger Characteristics</h2>
+
+        <p>Tigers are characterized by:</p>
+
+        <p>Distinctive orange fur with black stripes</p>
+        <p>Sharp claws and powerful jaws</p>
+        <p>Excellent swimmers</p>
+        <p>Nocturnal and solitary behavior</p>
+
+    </section>
+    <section id="photos">
+        <h2>Beautiful Tiger Photos & Click on the photo to see what it says</h2>
+        <div class="photo" onclick="showPhotoInfo(1)">
+            <img src="p4.jpg" alt="Tiger Photo 3" width="500" height="300">
         </div>
-        <footer>
-            <p>&copy; Created By Milan Patel. All rights reserved :D.</p>
-        </footer>
-        <script>
-            function showPhotoInfo(photoNumber) {
-                const photoInfo = document.getElementById("photo-info");
-                const photoDescription = document.getElementById("photo-description");
-                switch (photoNumber) {
-                    case 1:
-                        photoDescription.textContent = "SHINE BRIGHT LIKE A TIGER.";
-                        break;
-                    case 2:
-                        photoDescription.textContent = "TIGER IS ON THE MOVE.";
-                        break;
-                    case 3:
-                        photoDescription.textContent = "CHILLING UNDER A TREE IN ITS NATURAL HABITANT.";
-                        break;
-                    case 4:
-                        photoDescription.textContent = "MAMA TIGER TRYING TO HAVE TO HAVE A LIL COVERSATION WITH BABY cub.";
-                        break;
-                    case 5:
-                        photoDescription.textContent = "BABY Cub IN ACTION .";
-                        break;
-                    default:
-                        photoDescription.textContent = "Click on a photo to see its description.";
-                }
-                photoInfo.style.display = "block";
-            }
-        </script>
-    </body>
+        <div class="photo" onclick="showPhotoInfo(2)">
+            <img src="p2.jpg" alt="Tiger Photo 2" width="500" height="300">
+        </div>
+        <div class="photo" onclick="showPhotoInfo(3)">
+            <img src="p3.jpg" alt="Tiger Photo 3" width="500" height="300">
+        </div>
+        <div class="photo" onclick="showPhotoInfo(4)">
+            <img src="p5.jpg" alt="Tiger Photo 3" width="500" height="300">
+        </div>
+        <div class="photo" onclick="showPhotoInfo(5)">
+            <img src="p6.jpg" alt="Tiger Photo 3" width="500" height="300">
+        </div>
+    </section>
+    <div id="photo-info" style="display: none;">
+        <h2>Photo Information</h2>
+        <h3 id="photo-description">Click on a photo to see its description.</h3>
+    </div>
+    <footer>
+        <p>&copy; Created By Milan Patel. All rights reserved :D.</p>
+    </footer>
+    <script type="text/javascript" src="milan.js"></script>
+</body>
+
 </html>
